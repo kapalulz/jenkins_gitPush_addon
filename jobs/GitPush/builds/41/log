@@ -1,0 +1,31 @@
+Started by user [8mha:////4O5FzYfNbMu3b32npeEyX1tF4vOenx8n530C9lha5kYdAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL97MSCxJzSnCoAglVqgMMAAAA=[0mOleksandr Kashuba
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/GitPush
+The recommended git tool is: NONE
+using credential JenkinsGitPush
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/GitPush/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:kapalulz/jenkins_gitPush_addon.git # timeout=10
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision b2e0e6d77a0d3a9d2e8cad369efc468fd8a4b2f9 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b2e0e6d77a0d3a9d2e8cad369efc468fd8a4b2f9 # timeout=10
+Commit message: "Delete test-37.txt"
+ > git rev-list --no-walk b2e0e6d77a0d3a9d2e8cad369efc468fd8a4b2f9 # timeout=10
+[GitPush] $ /bin/sh -xe /tmp/jenkins17447057150536856039.sh
++ git config --global user.email kapalkoko@gmail.com
++ git config --global user.name Oleksandr Kashuba
++ pwd
+/var/lib/jenkins/workspace/GitPush
++ cp /var/lib/jenkins/123.txt /var/lib/jenkins/workspace/GitPush/
++ cp -f /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
+cp: -r not specified; omitting directory '/var/lib/jenkins/jobs'
+Build step 'Execute shell' marked build as failure
+Build did not succeed, so no pushing will occur.
+Finished: FAILURE

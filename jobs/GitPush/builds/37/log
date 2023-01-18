@@ -1,0 +1,66 @@
+Started by user [8mha:////4O5FzYfNbMu3b32npeEyX1tF4vOenx8n530C9lha5kYdAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL97MSCxJzSnCoAglVqgMMAAAA=[0mOleksandr Kashuba
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/GitPush
+The recommended git tool is: NONE
+using credential JenkinsGitPush
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/GitPush/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:kapalulz/jenkins_gitPush_addon.git # timeout=10
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision b256185f3995871d7f5365ebf2b22da00a6ff457 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b256185f3995871d7f5365ebf2b22da00a6ff457 # timeout=10
+Commit message: "Add 1674079218.txt"
+ > git rev-list --no-walk fe64f2b7e5bbff39243cdd3e3d3a3eb2c8b40a25 # timeout=10
+[GitPush] $ /bin/sh -xe /tmp/jenkins13625918101768463489.sh
++ git config --global user.email kapalkoko@gmail.com
++ git config --global user.name Oleksandr Kashuba
++ pwd
+/var/lib/jenkins/workspace/GitPush
++ cd /var/lib/jenkins/
++ cp 123.txt /var/lib/jenkins/workspace/GitPush/
++ cd /var/lib/jenkins/workspace/GitPush/
++ pwd
+/var/lib/jenkins/workspace/GitPush
++ echo 1
++ date +%s
++ TS=1674079286
++ touch 1674079286.txt
++ git add .
++ git commit -am Add 1674079286.txt
+[detached HEAD 06f12ce] Add 1674079286.txt
+ 3 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 1674079286.txt
+ create mode 100644 test-37.txt
++ git tag 1674079286
+The recommended git tool is: NONE
+using credential JenkinsGitPush
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+ > git remote # timeout=10
+ > git config --get remote.origin.url # timeout=10
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git merge b256185f3995871d7f5365ebf2b22da00a6ff457 # timeout=10
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git push git@github.com:kapalulz/jenkins_gitPush_addon.git HEAD:main # timeout=10
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git push git@github.com:kapalulz/jenkins_gitPush_addon.git HEAD:main --tags # timeout=10
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Finished: SUCCESS
