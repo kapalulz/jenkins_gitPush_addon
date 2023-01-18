@@ -25,3 +25,42 @@ Commit message: "Delete"
 /var/lib/jenkins/workspace/GitPush
 + cp /var/lib/jenkins/readme.txt /var/lib/jenkins/workspace/GitPush/
 + cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
++ echo Backup
++ date +%s
++ TS=1674082023
++ touch 1674082023.txt
++ git add .
++ git commit -am Add 1674082023.txt
+[detached HEAD 1ea2ff6] Add 1674082023.txt
+ 9 files changed, 206 insertions(+), 5 deletions(-)
+ create mode 100644 1674082023.txt
+ create mode 100644 jobs/GitPush/builds/47/build.xml
+ create mode 100644 jobs/GitPush/builds/48/changelog.xml
+ create mode 100644 jobs/GitPush/builds/48/log
+ create mode 100644 readme.txt
++ git tag 1674082023
+The recommended git tool is: NONE
+using credential JenkinsGitPush
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+ > git remote # timeout=10
+ > git config --get remote.origin.url # timeout=10
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git merge 58e1120cbef5ad528697b8a5e4466da9014ad3fa # timeout=10
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git push git@github.com:kapalulz/jenkins_gitPush_addon.git HEAD:main # timeout=10
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git push git@github.com:kapalulz/jenkins_gitPush_addon.git HEAD:main --tags # timeout=10
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Finished: SUCCESS
