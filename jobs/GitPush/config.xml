@@ -42,9 +42,10 @@
 git config --global user.name &quot;Oleksandr Kashuba&quot;
 
 pwd
-cp /var/lib/jenkins/123.txt /var/lib/jenkins/workspace/GitPush/
+cp /var/lib/jenkins/readme.txt /var/lib/jenkins/workspace/GitPush/
 cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
 
+echo Backup &gt; readme.txt
 TS=$(date +%s)
 touch &quot;$TS.txt&quot;
 git add .
