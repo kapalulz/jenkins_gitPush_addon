@@ -45,8 +45,6 @@ pwd
 cp /var/lib/jenkins/123.txt /var/lib/jenkins/workspace/GitPush/
 cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
 
-rm 123.txt
-
 TS=$(date +%s)
 touch &quot;$TS.txt&quot;
 git add .
