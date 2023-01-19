@@ -1,0 +1,26 @@
+Started by user [8mha:////4LzNxqIHVo97JoafUR7ifHuaARN4NJy87mDL9WJTNmTnAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL97MSCxJzSnCoAglVqgMMAAAA=[0mOleksandr Kashuba
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/GitPush
+The recommended git tool is: NONE
+using credential JenkinsGitPush
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/GitPush/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:kapalulz/jenkins_gitPush_addon.git # timeout=10
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision dfc89a816da5f526fac037ec4908ed98ca82a721 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f dfc89a816da5f526fac037ec4908ed98ca82a721 # timeout=10
+Commit message: "Delete readme.txt"
+First time build. Skipping changelog.
+[GitPush] $ /bin/sh -xe /tmp/jenkins9347368914940912179.sh
++ git config --global user.email kapalkoko@gmail.com
++ git config --global user.name Oleksandr Kashuba
++ pwd
+/var/lib/jenkins/workspace/GitPush
++ cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
