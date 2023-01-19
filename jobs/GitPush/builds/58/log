@@ -1,0 +1,236 @@
+Started by user [8mha:////4O5FzYfNbMu3b32npeEyX1tF4vOenx8n530C9lha5kYdAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL97MSCxJzSnCoAglVqgMMAAAA=[0mOleksandr Kashuba
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/GitPush
+The recommended git tool is: NONE
+using credential JenkinsGitPush
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/GitPush/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:kapalulz/jenkins_gitPush_addon.git # timeout=10
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision b59515eca4a1aad6fbd3f41b66e566087cebba2a (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b59515eca4a1aad6fbd3f41b66e566087cebba2a # timeout=10
+Commit message: "Add 1674169606.txt"
+ > git rev-list --no-walk b59515eca4a1aad6fbd3f41b66e566087cebba2a # timeout=10
+[GitPush] $ /bin/sh -xe /tmp/jenkins4472269919395176698.sh
++ curl http://192.168.31.111:8080/manage/thinBackup/backupManual
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   609  100   609    0     0  87000      0 --:--:-- --:--:-- --:--:--   99k
+<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fmanage%2FthinBackup%2FbackupManual'/><script>window.location.replace('/login?from=%2Fmanage%2FthinBackup%2FbackupManual');</script></head><body style='background-color:white; color:white;'>
+
+
+Authentication required
+<!--
+-->
+
+</body></html>                                                                                                                                                                                                                                                                                                            + git config --global user.email kapalkoko@gmail.com
++ git config --global user.name Oleksandr Kashuba
++ pwd
+/var/lib/jenkins/workspace/GitPush
++ cp -r /home/kapalulz/jenkinsBackUp1/FULL-2023-01-19_18-07 /var/lib/jenkins/workspace/GitPush/
++ cp /var/lib/jenkins/readme.txt /var/lib/jenkins/workspace/GitPush/
++ cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
++ echo Jenkins backup.
++ date +%s
++ TS=1674170274
++ touch 1674170274.txt
++ git add .
++ git commit -am Add 1674170274.txt
+[detached HEAD b711fdf] Add 1674170274.txt
+ 166 files changed, 2075 insertions(+), 6 deletions(-)
+ create mode 100644 1674170274.txt
+ create mode 100644 FULL-2023-01-19_18-07/com.cloudbees.hudson.plugins.folder.config.AbstractFolderConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/config.xml
+ create mode 100644 FULL-2023-01-19_18-07/credentials.xml
+ create mode 100644 FULL-2023-01-19_18-07/github-plugin-configuration.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.model.UpdateCenter.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.plugins.build_timeout.global.GlobalTimeOutConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.plugins.build_timeout.operations.BuildStepOperation.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.plugins.copyartifact.CopyArtifactConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.plugins.emailext.ExtendedEmailPublisher.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.plugins.git.GitSCM.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.plugins.git.GitTool.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.plugins.gradle.injection.InjectionConfig.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.plugins.timestamper.TimestamperConfig.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.tasks.Mailer.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.tasks.Shell.xml
+ create mode 100644 FULL-2023-01-19_18-07/hudson.triggers.SCMTrigger.xml
+ create mode 100644 FULL-2023-01-19_18-07/installedPlugins.xml
+ create mode 100644 FULL-2023-01-19_18-07/io.jenkins.plugins.junit.storage.JunitTestResultStorageConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/jenkins.fingerprints.GlobalFingerprintConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/jenkins.model.ArtifactManagerConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/jenkins.model.GlobalBuildDiscarderConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/jenkins.model.JenkinsLocationConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/jenkins.security.ResourceDomainConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/jenkins.telemetry.Correlator.xml
+ create mode 100644 FULL-2023-01-19_18-07/jobs/GitPush/builds/legacyIds
+ create mode 100644 FULL-2023-01-19_18-07/jobs/GitPush/builds/permalinks
+ create mode 100644 FULL-2023-01-19_18-07/jobs/GitPush/config.xml
+ create mode 100644 FULL-2023-01-19_18-07/jobs/GitPush/nextBuildNumber
+ create mode 100644 FULL-2023-01-19_18-07/jobs/pipe/builds/legacyIds
+ create mode 100644 FULL-2023-01-19_18-07/jobs/pipe/builds/permalinks
+ create mode 100644 FULL-2023-01-19_18-07/jobs/pipe/config.xml
+ create mode 100644 FULL-2023-01-19_18-07/jobs/pipe/nextBuildNumber
+ create mode 100644 FULL-2023-01-19_18-07/nodeMonitors.xml
+ create mode 100644 FULL-2023-01-19_18-07/org.jenkinsci.plugins.github_branch_source.GitHubConfiguration.xml
+ create mode 100644 FULL-2023-01-19_18-07/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+ create mode 100644 FULL-2023-01-19_18-07/org.jenkinsci.plugins.workflow.flow.GlobalDefaultFlowDurabilityLevel.xml
+ create mode 100644 FULL-2023-01-19_18-07/org.jenkinsci.plugins.workflow.libs.GlobalLibraries.xml
+ create mode 100644 FULL-2023-01-19_18-07/periodicBackup.xml
+ create mode 100644 FULL-2023-01-19_18-07/plugins/ace-editor.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/ant.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/antisamy-markup-formatter.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/apache-httpcomponents-client-4-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/appcenter.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/aws-credentials.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/aws-java-sdk-ec2.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/aws-java-sdk-minimal.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/bootstrap5-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/bouncycastle-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/branch-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/build-timeout.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/caffeine-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/checks-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/cloudbees-folder.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/command-launcher.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/commons-lang3-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/commons-text-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/copyartifact.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/credentials-binding.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/credentials.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/display-url-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/durable-task.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/echarts-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/email-ext.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/font-awesome-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/git-client.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/git-push.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/git.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/github-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/github-branch-source.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/github.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/gradle.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/instance-identity.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/ionicons-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/jackson2-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/jakarta-activation-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/jakarta-mail-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/javadoc.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/javax-activation-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/javax-mail-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/jaxb.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/jdk-tool.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/jjwt-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/jquery3-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/jsch.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/junit.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/ldap.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/mailer.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/matrix-auth.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/matrix-project.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/maven-plugin.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/mina-sshd-api-common.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/mina-sshd-api-core.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/momentjs.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/okhttp-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pam-auth.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-build-step.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-github-lib.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-graph-analysis.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-groovy-lib.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-input-step.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-milestone-step.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-model-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-model-definition.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-model-extensions.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-rest-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-stage-step.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-stage-tags-metadata.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/pipeline-stage-view.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/plain-credentials.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/plugin-util-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/popper2-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/publish-over-ssh.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/publish-over.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/resource-disposer.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/s3.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/scm-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/script-security.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/snakeyaml-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/ssh-credentials.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/ssh-slaves.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/sshd.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/structs.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/thinBackup.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/timestamper.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/token-macro.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/trilead-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/variant.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-aggregator.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-basic-steps.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-cps.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-durable-task-step.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-job.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-multibranch.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-scm-step.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-step-api.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/workflow-support.jpi
+ create mode 100644 FULL-2023-01-19_18-07/plugins/ws-cleanup.jpi
+ create mode 100644 FULL-2023-01-19_18-07/queue.xml
+ create mode 100644 FULL-2023-01-19_18-07/scriptApproval.xml
+ create mode 100644 FULL-2023-01-19_18-07/thinBackup.xml
+ create mode 100644 FULL-2023-01-19_18-07/userContent/readme.txt
+ create mode 100644 FULL-2023-01-19_18-07/users/kapalulz_13199668499886880367/config.xml
+ create mode 100644 FULL-2023-01-19_18-07/users/noreply_14994765617835019452/config.xml
+ create mode 100644 FULL-2023-01-19_18-07/users/users.xml
+ create mode 100644 jobs/GitPush/builds/53/build.xml
+ create mode 100644 jobs/GitPush/builds/54/build.xml
+ create mode 100644 jobs/GitPush/builds/54/changelog.xml
+ create mode 100644 jobs/GitPush/builds/54/log
+ create mode 100644 jobs/GitPush/builds/55/build.xml
+ create mode 100644 jobs/GitPush/builds/55/changelog.xml
+ create mode 100644 jobs/GitPush/builds/55/log
+ create mode 100644 jobs/GitPush/builds/56/build.xml
+ create mode 100644 jobs/GitPush/builds/56/changelog.xml
+ create mode 100644 jobs/GitPush/builds/56/log
+ create mode 100644 jobs/GitPush/builds/57/build.xml
+ create mode 100644 jobs/GitPush/builds/57/changelog.xml
+ create mode 100644 jobs/GitPush/builds/57/log
+ create mode 100644 jobs/GitPush/builds/58/changelog.xml
+ create mode 100644 jobs/GitPush/builds/58/log
++ git tag 1674170274
+HttpMethod: GET
+URL: http://192.168.31.111:8080/manage/thinBackup/backupManual
+Using authentication: http://192.168.31.111:8080/manage/thinBackup/backupManual
+Sending request to url: http://192.168.31.111:8080/manage/thinBackup/backupManual
+Response Code: HTTP/1.1 403 Forbidden
+ERROR: Build step failed with exception
+java.lang.IllegalStateException: Error doing authentication
+	at jenkins.plugins.http_request.auth.FormAuthentication.authenticate(FormAuthentication.java:63)
+	at jenkins.plugins.http_request.HttpRequestExecution.auth(HttpRequestExecution.java:422)
+	at jenkins.plugins.http_request.HttpRequestExecution.authAndRequest(HttpRequestExecution.java:364)
+	at jenkins.plugins.http_request.HttpRequestExecution.call(HttpRequestExecution.java:271)
+	at jenkins.plugins.http_request.HttpRequestExecution.call(HttpRequestExecution.java:80)
+	at hudson.remoting.LocalChannel.call(LocalChannel.java:47)
+	at jenkins.plugins.http_request.HttpRequest.perform(HttpRequest.java:449)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+	at hudson.model.Build$BuildExecution.build(Build.java:199)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:164)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:526)
+	at hudson.model.Run.execute(Run.java:1900)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Build step 'HTTP Request' marked build as failure
+Build did not succeed, so no pushing will occur.
+Finished: FAILURE

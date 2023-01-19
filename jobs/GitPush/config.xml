@@ -40,6 +40,8 @@
     <hudson.tasks.Shell>
       <command>curl http://192.168.31.111:8080/manage/thinBackup/backupManual
 
+
+
 git config --global user.email &quot;kapalkoko@gmail.com&quot;
 git config --global user.name &quot;Oleksandr Kashuba&quot;
 
@@ -56,6 +58,31 @@ git commit -am &quot;Add $TS.txt&quot;
 git tag &quot;$TS&quot;</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
+    <jenkins.plugins.http__request.HttpRequest plugin="http_request@1.16">
+      <url>http://192.168.31.111:8080/manage/thinBackup/backupManual</url>
+      <ignoreSslErrors>true</ignoreSslErrors>
+      <httpMode>GET</httpMode>
+      <httpProxy></httpProxy>
+      <proxyAuthentication></proxyAuthentication>
+      <passBuildParameters>false</passBuildParameters>
+      <validResponseCodes>100:399</validResponseCodes>
+      <validResponseContent></validResponseContent>
+      <acceptType>NOT_SET</acceptType>
+      <contentType>NOT_SET</contentType>
+      <outputFile></outputFile>
+      <timeout>0</timeout>
+      <consoleLogResponseBody>false</consoleLogResponseBody>
+      <quiet>false</quiet>
+      <authentication>kapalulz</authentication>
+      <requestBody></requestBody>
+      <uploadFile></uploadFile>
+      <multipartName></multipartName>
+      <wrapAsMultipart>false</wrapAsMultipart>
+      <useSystemProperties>true</useSystemProperties>
+      <useNtlm>false</useNtlm>
+      <customHeaders class="empty-list"/>
+      <formData class="empty-list"/>
+    </jenkins.plugins.http__request.HttpRequest>
   </builders>
   <publishers>
     <io.jenkins.plugins.git__push.GitPush plugin="git-push@34.vd474e0fe7b_ec">
