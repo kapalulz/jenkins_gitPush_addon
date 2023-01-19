@@ -1,6 +1,6 @@
 Jenkins Pipeline:
 Backup all critical files  ->
-Archive files (zip) ->
+Archive files (zip/tar.gz) ->
 Transfer to GitHub repo
   
 Terraform:
