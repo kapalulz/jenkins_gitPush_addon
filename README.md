@@ -1,1 +1,1 @@
-Test v.1
+Test
