@@ -38,7 +38,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>git config --global user.email &quot;kapalkoko@gmail.com&quot;
+      <command>curl http://192.168.31.111:8080/manage/thinBackup/backupManual
+
+git config --global user.email &quot;kapalkoko@gmail.com&quot;
 git config --global user.name &quot;Oleksandr Kashuba&quot;
 
 pwd

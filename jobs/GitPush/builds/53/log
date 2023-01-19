@@ -1,0 +1,39 @@
+Started by user [8mha:////4O5FzYfNbMu3b32npeEyX1tF4vOenx8n530C9lha5kYdAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL97MSCxJzSnCoAglVqgMMAAAA=[0mOleksandr Kashuba
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/GitPush
+The recommended git tool is: NONE
+using credential JenkinsGitPush
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/GitPush/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:kapalulz/jenkins_gitPush_addon.git # timeout=10
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 91db9a046927dd5ca55d7c6fe8ce1caf0ba29300 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 91db9a046927dd5ca55d7c6fe8ce1caf0ba29300 # timeout=10
+Commit message: "Add 1674168805.txt"
+ > git rev-list --no-walk 9519ba6a0db58cc7c4f61e82b3c31afb1de24438 # timeout=10
+[GitPush] $ /bin/sh -xe /tmp/jenkins13853806133509298683.sh
++ curl http://192.168.31.111:8080/manage/thinBackup/backupManual
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   609  100   609    0     0   148k      0 --:--:-- --:--:-- --:--:--  148k
+<html><head><meta http-equiv='refresh' content='1;url=/login?from=%2Fmanage%2FthinBackup%2FbackupManual'/><script>window.location.replace('/login?from=%2Fmanage%2FthinBackup%2FbackupManual');</script></head><body style='background-color:white; color:white;'>
+
+
+Authentication required
+<!--
+-->
+
+</body></html>                                                                                                                                                                                                                                                                                                            + git config --global user.email kapalkoko@gmail.com
++ git config --global user.name Oleksandr Kashuba
++ pwd
+/var/lib/jenkins/workspace/GitPush
++ cp -r /home/kapalulz/jenkinsBackUp1/FULL-2023-01-19_17-58 /var/lib/jenkins/workspace/GitPush/
++ cp /var/lib/jenkins/readme.txt /var/lib/jenkins/workspace/GitPush/
++ cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
