@@ -1,0 +1,29 @@
+Started by user [8mha:////4M8vb1i9c2CkC9+J2ILaeTwmgoi1TwQ2hF3ACfRBq/lCAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgY+/dLi1CL97MSCxJzSnCoAglVqgMMAAAA=[0mOleksandr Kashuba
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/GitPush
+The recommended git tool is: NONE
+using credential JenkinsGitPush
+Cloning the remote Git repository
+Cloning repository git@github.com:kapalulz/jenkins_gitPush_addon.git
+ > git init /var/lib/jenkins/workspace/GitPush # timeout=10
+Fetching upstream changes from git@github.com:kapalulz/jenkins_gitPush_addon.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --progress -- git@github.com:kapalulz/jenkins_gitPush_addon.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:kapalulz/jenkins_gitPush_addon.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 6dfdf8b91f719fa6ccafc4239fa709df03a72fe7 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6dfdf8b91f719fa6ccafc4239fa709df03a72fe7 # timeout=10
+Commit message: "Delete 123.txt"
+First time build. Skipping changelog.
+[GitPush] $ /bin/sh -xe /tmp/jenkins2999140052431762969.sh
++ git config --global user.email kapalkoko@gmail.com
++ git config --global user.name Oleksandr Kashuba
++ pwd
+/var/lib/jenkins/workspace/GitPush
++ cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
