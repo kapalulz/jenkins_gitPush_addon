@@ -65,9 +65,7 @@
     <hudson.tasks.Shell>
       <command>git config --global user.email &quot;kapalkoko@gmail.com&quot;
 git config --global user.name &quot;Oleksandr Kashuba&quot;
-#HOMEDIR=$(/home/kapalulz/jenkinsBackUp1/FULL-*)
-JenkinsBackup=$(/home/kapalulz/jenkinsBackUp1/JenkinsBackup)
-GITDIR=$(/var/lib/jenkins/workspace/BackUP/)
+
 #cd /home/kapalulz/jenkinsBackUp1/FULL-*/
 #zip -r /home/kapalulz/jenkinsBackUp1/my_arch.zip ./*
 #chmod 777 /home/kapalulz/jenkinsBackUp1/my_arch.zip
