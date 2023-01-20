@@ -66,10 +66,16 @@
       <command>git config --global user.email &quot;kapalkoko@gmail.com&quot;
 git config --global user.name &quot;Oleksandr Kashuba&quot;
 
-#cd /home/kapalulz/jenkinsBackUp1/FULL-*/
-#zip -r /home/kapalulz/jenkinsBackUp1/my_arch.zip ./*
+TD=$(date +%x) #Date
+TZ=$(date +%Z) #Time Zone
+TH=$(date +%H) #Hours
+TM=$(date +%M) #Min
+TS=$(date +%S) #Sec
+
+cd /home/kapalulz/jenkinsBackUp1/FULL-*/
+zip -r -s 90m /home/kapalulz/jenkinsBackUp1/jenkins_backup_$TD.zip ./*
 #chmod 777 /home/kapalulz/jenkinsBackUp1/my_arch.zip
-#cd /var/lib/jenkins/workspace/BackUP/
+cd /var/lib/jenkins/workspace/BackUP/
 
 mv /home/kapalulz/jenkinsBackUp1/FULL-* /home/kapalulz/jenkinsBackUp1/JenkinsBackup
 sleep 10
@@ -79,11 +85,7 @@ rm -r /home/kapalulz/jenkinsBackUp1/JenkinsBackup
 #cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
 #echo Jenkins backup. $TAG_DATE &gt;&gt; readme.txt
 
-TD=$(date +%x) #Date
-TZ=$(date +%Z) #Time Zone
-TH=$(date +%H) #Hours
-TM=$(date +%M) #Min
-TS=$(date +%S) #Sec
+
 #BackupDir=$(find /home/kapalulz/jenkinsBackUp1/FULL-* -maxdepth 0 -type d) # Name of folder
 #touch &quot;$BackupDir.txt&quot;
 git add .
