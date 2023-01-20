@@ -47,7 +47,7 @@ cp -r /home/kapalulz/jenkinsBackUp1/FULL-* /var/lib/jenkins/workspace/GitPush/
 #cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
 echo Jenkins backup. $TAG_DATE &gt;&gt; readme.txt
 
-TS=$(date +%m-%d-%Y)
+TS=$(date +%x)
 TZ=$(date +%Z)
 TH=$(date +%H)
 TM=$(date +%M)
