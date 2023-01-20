@@ -42,7 +42,7 @@
 git config --global user.name &quot;Oleksandr Kashuba&quot;
 
 
-#cd /home/kapalulz/jenkinsBackUp1/FULL-*/
+cd /home/kapalulz/jenkinsBackUp1/FULL-*/
 #sudo zip -r /home/kapalulz/jenkinsBackUp1/my_arch.zip ./*
 #sudo chomod 777 my_arch.zip
 #
