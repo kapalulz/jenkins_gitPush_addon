@@ -65,6 +65,7 @@ git config --global user.name &quot;Oleksandr Kashuba&quot;
 mv /home/kapalulz/jenkinsBackUp1/FULL-* /home/kapalulz/jenkinsBackUp1/JenkinsBackup
 sleep 10
 cp -r /home/kapalulz/jenkinsBackUp1/JenkinsBackup /var/lib/jenkins/workspace/BackUP/
+rm -r /home/kapalulz/jenkinsBackUp1/JenkinsBackup
 #cp /var/lib/jenkins/readme.txt /var/lib/jenkins/workspace/GitPush/
 #cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
 #echo Jenkins backup. $TAG_DATE &gt;&gt; readme.txt
