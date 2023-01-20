@@ -75,7 +75,7 @@ TS=$(date +%S) #Sec
 
 #Achieve if needed {
 cd /home/kapalulz/jenkinsBackUp1/FULL-*/
-zip -r -s 90m /home/kapalulz/jenkinsBackUp1/jenkins_backup.zip ./*
+zip -r /home/kapalulz/jenkinsBackUp1/jenkins_backup1.zip ./*
 cd /var/lib/jenkins/workspace/BackUP/
 #                  }
 
