@@ -71,23 +71,19 @@ TZ=$(date +%Z) #Time Zone
 TH=$(date +%H) #Hours
 TM=$(date +%M) #Min
 TS=$(date +%S) #Sec
+#BackupDir=$(find /home/kapalulz/jenkinsBackUp1/FULL-* -maxdepth 0 -type d) # Name of folder
 
+#Achieve if needed {
 cd /home/kapalulz/jenkinsBackUp1/FULL-*/
 zip -r -s 90m /home/kapalulz/jenkinsBackUp1/jenkins_backup.zip ./*
-#chmod 777 /home/kapalulz/jenkinsBackUp1/my_arch.zip
 cd /var/lib/jenkins/workspace/BackUP/
+#                  }
 
 mv /home/kapalulz/jenkinsBackUp1/FULL-* /home/kapalulz/jenkinsBackUp1/JenkinsBackup
 sleep 10
 cp -r /home/kapalulz/jenkinsBackUp1/JenkinsBackup /var/lib/jenkins/workspace/BackUP/
 rm -r /home/kapalulz/jenkinsBackUp1/JenkinsBackup
-#cp /var/lib/jenkins/readme.txt /var/lib/jenkins/workspace/GitPush/
-#cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
-#echo Jenkins backup. $TAG_DATE &gt;&gt; readme.txt
 
-
-#BackupDir=$(find /home/kapalulz/jenkinsBackUp1/FULL-* -maxdepth 0 -type d) # Name of folder
-#touch &quot;$BackupDir.txt&quot;
 git add .
 git commit -am &quot;$TD $TZ:$TH-$TM-$TS #$BUILD_NUMBER&quot;
 #git tag &quot;$TD|$TZ-$TH-$TM-$TS&quot;</command>
