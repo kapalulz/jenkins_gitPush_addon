@@ -57,9 +57,14 @@
       <command>git config --global user.email &quot;kapalkoko@gmail.com&quot;
 git config --global user.name &quot;Oleksandr Kashuba&quot;
 
-pwd
-sleep 25
-cp -r /home/kapalulz/jenkinsBackUp1/FULL-* /var/lib/jenkins/workspace/BackUP/
+#cd /home/kapalulz/jenkinsBackUp1/FULL-*/
+#zip -r /home/kapalulz/jenkinsBackUp1/my_arch.zip ./*
+#chmod 777 /home/kapalulz/jenkinsBackUp1/my_arch.zip
+#cd /var/lib/jenkins/workspace/BackUP/
+
+mv /home/kapalulz/jenkinsBackUp1/FULL-* /home/kapalulz/jenkinsBackUp1/JenkinsBackup
+sleep 10
+cp -r /home/kapalulz/jenkinsBackUp1/JenkinsBackup /var/lib/jenkins/workspace/BackUP/
 #cp /var/lib/jenkins/readme.txt /var/lib/jenkins/workspace/GitPush/
 #cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
 #echo Jenkins backup. $TAG_DATE &gt;&gt; readme.txt
@@ -73,7 +78,7 @@ TS=$(date +%S) #Sec
 #touch &quot;$BackupDir.txt&quot;
 git add .
 git commit -am &quot;$TD $TZ:$TH-$TM-$TS #$BUILD_NUMBER&quot;
-git tag &quot;$TD|$TZ-$TH-$TM-$TS&quot;</command>
+#git tag &quot;$TD|$TZ-$TH-$TM-$TS&quot;</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
