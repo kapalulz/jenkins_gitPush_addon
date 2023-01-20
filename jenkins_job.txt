@@ -14,6 +14,7 @@ TS=$(date +%S) #Sec
 #cp -r /home/kapalulz/jenkinsBackUp/jenkins_backup1.z* /var/lib/jenkins/workspace/BackUP/
 #cd /var/lib/jenkins/workspace/BackUP/
 #                  }
+#for multi-unzip:
 #zip -s 0 split-foo.zip --out unsplit-foo.zip
 #unzip unsplit-foo.zip
 
