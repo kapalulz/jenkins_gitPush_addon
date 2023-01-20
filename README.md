@@ -2,9 +2,9 @@
 Backup all critical files  -> </br>
 Archive files (zip), if needed -> </br>
 Transfer to GitHub repo </br>
-Pluginsq:
-• ThinBackup
-• [HTTP Request](https://www.jenkins.io/doc/pipeline/steps/http_request/)
+Plugins: </br>
+• [ThinBackup](https://plugins.jenkins.io/thinBackup/) </br>
+• [HTTP Request](https://www.jenkins.io/doc/pipeline/steps/http_request/) </br>
 </br>  
 Terraform: </br>
 Create a new ec2 instance with jenkins </br>
