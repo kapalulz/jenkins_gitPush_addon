@@ -10,9 +10,12 @@ TS=$(date +%S) #Sec
 
 #Achieve if needed {
 #cd /home/kapalulz/jenkinsBackUp1/FULL-*/
-#zip -r -s 90m /home/kapalulz/jenkinsBackUp1/jenkins_backup.zip ./*
+#zip -r -s 90m /home/kapalulz/jenkinsBackUp1/jenkins_backup1.zip ./*
+#cp -r /home/kapalulz/jenkinsBackUp1/jenkins_backup1.z* /var/lib/jenkins/workspace/BackUP/
 #cd /var/lib/jenkins/workspace/BackUP/
-#                 }
+#                  }
+#zip -s 0 split-foo.zip --out unsplit-foo.zip
+#unzip unsplit-foo.zip
 
 mv /home/kapalulz/jenkinsBackUp1/FULL-* /home/kapalulz/jenkinsBackUp1/JenkinsBackup
 sleep 10
