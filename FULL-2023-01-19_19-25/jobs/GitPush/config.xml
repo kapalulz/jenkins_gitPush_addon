@@ -1,0 +1,95 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>5</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.14.3">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>git@github.com:kapalulz/jenkins_gitPush_addon.git</url>
+        <credentialsId>JenkinsGitPush</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/main</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="empty-list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>git config --global user.email &quot;kapalkoko@gmail.com&quot;
+git config --global user.name &quot;Oleksandr Kashuba&quot;
+
+pwd
+cp -r /home/kapalulz/jenkinsBackUp1/FULL-* /var/lib/jenkins/workspace/GitPush/
+#cp /var/lib/jenkins/readme.txt /var/lib/jenkins/workspace/GitPush/
+#cp -r /var/lib/jenkins/jobs /var/lib/jenkins/workspace/GitPush/
+echo Jenkins backup. $TAG_DATE &gt;&gt; readme.txt
+
+TS=$(date +%F)
+TZ=$(date +%Z)
+TH=$(date +%H)
+TM=$(date +%M)
+TS=$(date +%S)
+BackupDir=$(find /home/kapalulz/jenkinsBackUp1/FULL-* -maxdepth 0 -type d)
+#touch &quot;$BackupDir.txt&quot;
+git add .
+git commit -am &quot;Add $TS-||$TZ: $TH-$TM-$TS ||-№$BUILD_NUMBER&quot;
+git tag &quot;$TS-||-$TZ-$TH-$TM-$TS||-№$BUILD_NUMBER&quot;</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+    <jenkins.plugins.http__request.HttpRequest plugin="http_request@1.16">
+      <url>http://192.168.31.111:8080/manage/thinBackup/backupManual</url>
+      <ignoreSslErrors>true</ignoreSslErrors>
+      <httpMode>GET</httpMode>
+      <httpProxy></httpProxy>
+      <proxyAuthentication></proxyAuthentication>
+      <passBuildParameters>false</passBuildParameters>
+      <validResponseCodes>100:399</validResponseCodes>
+      <validResponseContent></validResponseContent>
+      <acceptType>NOT_SET</acceptType>
+      <contentType>NOT_SET</contentType>
+      <outputFile></outputFile>
+      <timeout>0</timeout>
+      <consoleLogResponseBody>false</consoleLogResponseBody>
+      <quiet>false</quiet>
+      <authentication>kapalulz</authentication>
+      <requestBody></requestBody>
+      <uploadFile></uploadFile>
+      <multipartName></multipartName>
+      <wrapAsMultipart>false</wrapAsMultipart>
+      <useSystemProperties>true</useSystemProperties>
+      <useNtlm>false</useNtlm>
+      <customHeaders class="empty-list"/>
+      <formData class="empty-list"/>
+    </jenkins.plugins.http__request.HttpRequest>
+  </builders>
+  <publishers>
+    <io.jenkins.plugins.git__push.GitPush plugin="git-push@34.vd474e0fe7b_ec">
+      <targetBranch>main</targetBranch>
+      <targetRepo>origin</targetRepo>
+    </io.jenkins.plugins.git__push.GitPush>
+  </publishers>
+  <buildWrappers/>
+</project>
