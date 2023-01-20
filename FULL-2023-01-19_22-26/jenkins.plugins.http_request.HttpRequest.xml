@@ -1,0 +1,16 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.http__request.HttpRequestGlobalConfig plugin="http_request@1.16">
+  <formAuthentications>
+    <jenkins.plugins.http__request.auth.FormAuthentication>
+      <keyName>http://192.168.31.111:8080/manage/thinBackup/backupManual</keyName>
+      <actions>
+        <jenkins.plugins.http__request.util.RequestAction>
+          <url>http://192.168.31.111:8080/manage/thinBackup/backupManual</url>
+          <mode>GET</mode>
+          <params/>
+          <headers/>
+        </jenkins.plugins.http__request.util.RequestAction>
+      </actions>
+    </jenkins.plugins.http__request.auth.FormAuthentication>
+  </formAuthentications>
+</jenkins.plugins.http__request.HttpRequestGlobalConfig>
