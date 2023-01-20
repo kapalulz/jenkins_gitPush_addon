@@ -1,5 +1,3 @@
-Jenkins backup. Jenkins Job
-
 git config --global user.email "kapalkoko@gmail.com"
 git config --global user.name "Oleksandr Kashuba"
 
@@ -10,9 +8,11 @@ TM=$(date +%M) #Min
 TS=$(date +%S) #Sec
 #BackupDir=$(find /home/kapalulz/jenkinsBackUp1/FULL-* -maxdepth 0 -type d) # Name of folder
 
-cd /home/kapalulz/jenkinsBackUp1/FULL-*/
-zip -r -s 90m /home/kapalulz/jenkinsBackUp1/jenkins_backup.zip ./*
-cd /var/lib/jenkins/workspace/BackUP/
+#Achieve if needed {
+#cd /home/kapalulz/jenkinsBackUp1/FULL-*/
+#zip -r -s 90m /home/kapalulz/jenkinsBackUp1/jenkins_backup.zip ./*
+#cd /var/lib/jenkins/workspace/BackUP/
+#                 }
 
 mv /home/kapalulz/jenkinsBackUp1/FULL-* /home/kapalulz/jenkinsBackUp1/JenkinsBackup
 sleep 10
