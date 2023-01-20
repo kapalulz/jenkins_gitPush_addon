@@ -2,7 +2,7 @@
 Backup all critical files  -> </br>
 Archive files (zip), if needed -> </br>
 Transfer to GitHub repo </br>
- </br>  
+</br>  
 Terraform: </br>
 Create a new ec2 instance with jenkins </br>
 Bash script: </br>
