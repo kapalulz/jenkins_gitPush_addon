@@ -73,7 +73,7 @@ TM=$(date +%M) #Min
 TS=$(date +%S) #Sec
 
 cd /home/kapalulz/jenkinsBackUp1/FULL-*/
-zip -r -s 90m /home/kapalulz/jenkinsBackUp1/jenkins_backup_$TD.zip ./*
+zip -r -s 90m /home/kapalulz/jenkinsBackUp1/jenkins_backup.zip ./*
 #chmod 777 /home/kapalulz/jenkinsBackUp1/my_arch.zip
 cd /var/lib/jenkins/workspace/BackUP/
 
