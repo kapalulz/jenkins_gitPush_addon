@@ -52,7 +52,7 @@ BackupDir=$(find /home/kapalulz/jenkinsBackUp1/FULL-* -maxdepth 0 -type d)
 touch &quot;$BackupDir.txt&quot;
 git add .
 git commit -am &quot;Add $TS.txt&quot;
-git tag &quot;$BUILD_NUMBER+$TS&quot;</command>
+git tag &quot;$TS-№$BUILD_NUMBER&quot;</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
     <jenkins.plugins.http__request.HttpRequest plugin="http_request@1.16">
