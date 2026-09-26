@@ -1,0 +1,29 @@
+# Jenkins secrets and identity
+**/credentials.xml
+**/secrets/
+**/secret.key
+**/secret.key.not-so-secret
+**/identity.key.enc
+**/master.key
+**/users/
+**/nodes/
+
+# Runtime data and caches
+**/logs/
+**/caches/
+**/workspace/
+**/fingerprints/
+**/queue.xml
+**/*.log
+
+# Downloaded plugins and archives
+**/plugins/*.jpi
+**/plugins/*.hpi
+*.zip
+*.tar.gz
+
+# Local credentials
+.env
+.env.*
+*.pem
+*.key
